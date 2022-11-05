@@ -1,1 +1,0 @@
-# olympiadartsi.github.io
