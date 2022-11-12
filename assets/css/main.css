@@ -883,7 +883,7 @@ input, select, textarea {
 			font-style: normal;
 			font-variant: normal;
 			text-rendering: auto;
-			line-height: 1;
+			line-height: 0.3;
 			border-radius: line-height; /* or 50% width & line-height */
 			text-transform: none !important;
 			font-family: 'Font Awesome 5 Free';
