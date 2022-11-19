@@ -1977,8 +1977,9 @@ input, select, textarea {
 
 		/* Fading animation */
 		.fade {
-		  animation-name: fade;
-		  animation-duration: 1.5s;
+		  animation: slideshow 10s infinite;
+		 /* animation-name: fade;
+		  animation-duration: 1.5s;*/
 		}
 
 		@keyframes fade {
