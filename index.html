@@ -12,6 +12,15 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="icon" type="image/x-icon" href="images/bike.png">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+  		<!-- Include jQuery -->
+  		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  		<!-- Include Slick -->
+  		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+  		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
 	</head>
 	<body class="is-preload">
 
@@ -293,11 +302,48 @@
 						<!-- Art -->
 							<article id="art">
 								<h2 class="major">Paintings</h2>
+								<div class="slideshow-container">
 
-							<!-- Slideshow container -->
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 3</div>
+    <img src="images/pic_1.jpg" alt="" style="width:100%;">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 3</div>
+    <img src="images/pic_5.jpg" alt="" style="width:100%;">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 3</div>
+    <img src="images/pic_3.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <!-- Arrow buttons -->
+  <a class="prev">&#10094;</a>
+  <a class="next">&#10095;</a>
+
+</div>
+
+<script>
+  // Initialize Slick carousel
+  $('.slideshow-container').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: $('.prev'),
+    nextArrow: $('.next')
+  });
+</script>
+
+							<!-- Slideshow container 
 							<div class="slideshow-container">
 
-							  <!-- Full-width images with number and caption text -->
+							  <!-- Full-width images with number and caption text 
 							  <div class="mySlides fade">
 							   <div class="numbertext">1 / 3</div>
 							    <img src= 
