@@ -577,6 +577,17 @@ input, select, textarea {
 		color: rgba(255, 255, 255, 0.5) !important;
 		opacity: 1.0;
 	}
+#projects-container {
+  margin-bottom: 20px;
+}
+
+#load-more-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
 
 /* Box */
 
