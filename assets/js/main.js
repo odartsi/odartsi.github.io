@@ -450,37 +450,7 @@ mediumPromise.then(function()
 
 			}
 	
-	// Sample array of projects
-const projects = [
-  { title: 'Project 1', description: 'This is project 1' },
-  { title: 'Project 2', description: 'This is project 2' },
-  { title: 'Project 3', description: 'This is project 3' },
-  // Add more projects as needed
-];
 
-const container = document.getElementById('projects-container');
-const button = document.getElementById('load-more-button');
-let projectsShown = 0;
-
-// Function to add projects to the container
-function addProjects() {
-  const projectsToAdd = projects.slice(projectsShown, projectsShown + 2); // Change 2 to the number of projects to load each time
-
-  projectsToAdd.forEach(project => {
-    const projectElement = document.createElement('div');
-    projectElement.innerHTML = `<h3>${project.title}</h3><p>${project.description}</p>`;
-    container.appendChild(projectElement);
-  });
-
-  projectsShown += projectsToAdd.length;
-
-  // Hide the button if all projects are shown
-  if (projectsShown >= projects.length) {
-    button.style.display = 'none';
-  }
-}
-
-button.addEventListener('click', addProjects);
 
 
 		// Initialize.
