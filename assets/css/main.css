@@ -1886,12 +1886,12 @@ input, select, textarea {
 					left: 0.875rem;
 					width: 2.25rem;
 					height: 2.25rem;
-					background-size: 20px 20px;
+					background-size: 14px 14px;
 				}
 
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 600px) {
 
 			#main article {
 				padding: 3rem 1.5rem 0.5rem 1.5rem ;
