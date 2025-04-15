@@ -2040,3 +2040,8 @@ input, select, textarea {
   border-radius: 8px;
   text-align: center;
 }
+.project-card a {
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
