@@ -2026,3 +2026,17 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+/* Custom layout for Projects section */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  align-items: start;
+}
+
+.project-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
