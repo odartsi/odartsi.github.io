@@ -157,6 +157,10 @@ input, select, textarea {
 		text-decoration: none;
 		color: inherit;
 	}
+	a img,
+	a.icon {
+	  border-bottom: none !important;
+	}
 
 		a:hover {
 			border-bottom-color: transparent;
