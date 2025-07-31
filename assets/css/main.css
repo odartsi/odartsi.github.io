@@ -167,8 +167,8 @@ input, select, textarea {
 
 		a img {
 		  border-bottom: none !important;
-		  outline: none !important;
-		  text-decoration: none !important;
+/* 		  outline: none !important;
+		  text-decoration: none !important; */
 		  display: inline-block;
 		}
 		
