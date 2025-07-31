@@ -165,15 +165,6 @@ input, select, textarea {
 		}
 
 
-		a img {
-		  border-bottom: none !important;
-		  outline: none !important;
-		  text-decoration: none !important;
-		  display: inline-block;
-		}
-		a:has(img) {
-		  border-bottom: none !important;
-		}
 
 	strong, b {
 		color: #ffffff;
