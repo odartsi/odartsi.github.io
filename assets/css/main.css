@@ -2077,7 +2077,16 @@ input, select, textarea {
   display: inline-block;
   margin: 0 auto;
 }
+img {
+    vertical-align: middle; /* or top, or bottom — prevents alignment issues */
+    border: none;
+}
 
+a img {
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
 .center {
   display: block;
   margin-left: auto;
