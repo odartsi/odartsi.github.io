@@ -155,13 +155,24 @@ input, select, textarea {
 		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 /* 		border-bottom: dotted 1px rgba(255, 255, 255, 0.5); */
 		text-decoration: none;
-		color: inherit;
+		color: transparent;
 		border-bottom: none;
 	}
 	
 
 		a:hover {
 			border-bottom-color: transparent;
+		}
+
+
+		a img,
+		a.icon,
+		a > img,
+		a > .icon {
+		  border-bottom: none !important;
+		  outline: none !important;
+		  text-decoration: none !important;
+		  display: inline-block;
 		}
 
 	strong, b {
