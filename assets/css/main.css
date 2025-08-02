@@ -155,16 +155,12 @@ input, select, textarea {
 		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		border-bottom: dotted 1px rgba(255, 255, 255, 0.5);
 		text-decoration: none;
-		color: transparent;
-		border-bottom: none;
+		color: inherit;
 	}
-	
 
 		a:hover {
 			border-bottom-color: transparent;
 		}
-
-
 
 	strong, b {
 		color: #ffffff;
@@ -581,7 +577,6 @@ input, select, textarea {
 		color: rgba(255, 255, 255, 0.5) !important;
 		opacity: 1.0;
 	}
-
 
 /* Box */
 
@@ -1992,7 +1987,6 @@ input, select, textarea {
 		  from {opacity: .4}
 		  to {opacity: 1}
 		}
-
 
 /* Footer */
 
