@@ -2090,3 +2090,10 @@ a.icon:before,
   text-decoration: none !important;
   outline: none !important;
 }
+
+
+.icon a img {
+  border-bottom: none !important;
+  display: inline-block;
+  vertical-align: middle;
+}
