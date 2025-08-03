@@ -2081,3 +2081,12 @@ input, select, textarea {
   margin-left: auto;
   margin-right: auto;
 }
+
+a.icon,
+a.icon:before,
+.icon a,
+.icon a:before {
+  border-bottom: none !important;
+  text-decoration: none !important;
+  outline: none !important;
+}
