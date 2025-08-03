@@ -2097,3 +2097,11 @@ a.icon:before,
   display: inline-block;
   vertical-align: middle;
 }
+
+a.icon-link,
+a.icon-link img {
+  border-bottom: none !important;
+  text-decoration: none !important;
+  outline: none !important;
+  vertical-align: middle;
+}
