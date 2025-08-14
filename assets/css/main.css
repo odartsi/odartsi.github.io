@@ -79,13 +79,13 @@ input, select, textarea {
 		width: device-width;
 	}
 
-	@media screen and (max-width: 600px) {
+/* 	@media screen and (max-width: 600px) {
 		html, body {
 			min-width: 480px;
 		} 
 
 	}
-
+ */
 	html {
 		box-sizing: border-box;
 	}
@@ -93,7 +93,11 @@ input, select, textarea {
 	*, *:before, *:after {
 		box-sizing: inherit;
 	}
-
+html, body {
+	width: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
+}
 	body {
 		background: #3d6380; /*#1b1f22;*/
 	}
@@ -2104,6 +2108,7 @@ a.icon-link img {
   outline: none !important;
   vertical-align: middle;
 }
+
 
 
 
