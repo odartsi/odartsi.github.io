@@ -79,7 +79,7 @@ input, select, textarea {
 		width: device-width;
 	}
 
-	@media screen and (max-width: 580px) {
+	@media screen and (max-width: 600px) {
 		html, body {
 			min-width: 480px;
 		} 
@@ -2104,5 +2104,6 @@ a.icon-link img {
   outline: none !important;
   vertical-align: middle;
 }
+
 
 
