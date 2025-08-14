@@ -2113,6 +2113,14 @@ a.icon-link img {
 
 
 
+.project-grid.one-column {
+  display: grid;
+  grid-template-columns: 1fr; /* One column */
+  gap: 2rem;
+  margin-top: 2rem;
+}
 
-
+.project-card {
+  text-align: center;
+}
 
