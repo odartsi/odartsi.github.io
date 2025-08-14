@@ -80,10 +80,15 @@ input, select, textarea {
 	}
 
 	@media screen and (max-width: 600px) {
-
 		html, body {
+		width: 100%;
+		max-width: 100%;
+		overflow-x: hidden;
+	}
+
+/* 		html, body {
 			min-width: 480px;
-		}
+		} */
 
 	}
 
@@ -2105,3 +2110,4 @@ a.icon-link img {
   outline: none !important;
   vertical-align: middle;
 }
+
