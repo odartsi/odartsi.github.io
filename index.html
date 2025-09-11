@@ -51,6 +51,7 @@
 								<li><a href="#presentations">Presentations</a></li>
 								<li><a href="#presentations">Outreach</a></li>
 								<li><a href="#art">Art</a></li>
+								<li><a href="#art">Art2</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
@@ -278,6 +279,14 @@
 							      </a>
 							      <p>A Multiarmed Bandit algorithm using the UCB algorithm.</p>
 							    </div>
+
+								  <div class="project-card">
+								  <b>Interactive Dashboard for Materials Research</b>
+								  <a href="https://github.com/user-attachments/assets/fdf3d33a-c34c-4738-9f2b-3924d3544bac" target="_blank">
+								    <img src="images/video_preview.png" alt="Video Preview" style="width:100%;" />
+								  </a>
+								  <p>Interactive dashboard to visualize and interpret materials synthesis and characterization data. Built with Python and HoloViz Panel.</p>
+								</div>
 							
 							    <div class="project-card">
 							      <b>Data Imputation</b>
@@ -572,7 +581,42 @@
     </div>
   </div>
 </article>
-									
+						<article id="art2">
+  <h2 class="major">Art Gallery</h2>
+  <blockquote>Painting is my preferred form of meditation — here are a few selected works.</blockquote>
+
+  <div class="slider">
+    <div><img src="images/pic_1.jpg" alt="Art 1" style="width:100%;" /></div>
+    <div><img src="images/pic_2.jpg" alt="Art 2" style="width:100%;" /></div>
+    <div><img src="images/pic_3.jpg" alt="Art 3" style="width:100%;" /></div>
+    <div><img src="images/IMG_20230802_120737.jpg" alt="Art 4" style="width:100%;" /></div>
+    <div><img src="images/IMG_20230802_120815.jpg" alt="Art 5" style="width:100%;" /></div>
+    <div><img src="images/IMG_20230518_192456.jpg" alt="Art 6" style="width:100%;" /></div>
+    <div><img src="images/pic_9.jpg" alt="Art 7" style="width:100%;" /></div>
+  </div>
+
+  <style>
+    .slider img {
+      border-radius: 8px;
+      max-height: 70vh;
+      object-fit: contain;
+    }
+  </style>
+
+  <script>
+    $(document).ready(function(){
+      $('.slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        arrows: true,
+        autoplay: false
+      });
+    });
+  </script>
+</article>			
 							</article>
 
 						<!-- Visualizations -->
@@ -913,6 +957,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 	</body>
 </html>
+
 
 
 
