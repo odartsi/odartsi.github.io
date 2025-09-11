@@ -5,6 +5,9 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
+	<!-- Lightbox2 CSS and JS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 	<head>
 		<title>Olympia Dartsi</title>
 		<meta charset="utf-8" />
@@ -581,43 +584,74 @@
     </div>
   </div>
 </article>
-						<article id="art2">
-  <h2 class="major">Art Gallery</h2>
-  <blockquote>Painting is my preferred form of meditation — here are a few selected works.</blockquote>
 
-  <div class="slider">
-    <div><img src="images/pic_1.jpg" alt="Art 1" style="width:100%;" /></div>
-    <div><img src="images/pic_2.jpg" alt="Art 2" style="width:100%;" /></div>
-    <div><img src="images/pic_3.jpg" alt="Art 3" style="width:100%;" /></div>
-    <div><img src="images/IMG_20230802_120737.jpg" alt="Art 4" style="width:100%;" /></div>
-    <div><img src="images/IMG_20230802_120815.jpg" alt="Art 5" style="width:100%;" /></div>
-    <div><img src="images/IMG_20230518_192456.jpg" alt="Art 6" style="width:100%;" /></div>
-    <div><img src="images/pic_9.jpg" alt="Art 7" style="width:100%;" /></div>
+<article id="art2">
+  <h2 class="major">Art Gallery</h2>
+  <blockquote>
+    Painting is my preferred form of meditation — here are a few selected works. Click to view full size.
+  </blockquote>
+
+  <div class="gallery-grid">
+
+    <a href="images/pic_1.jpg" data-lightbox="art-gallery" data-title="Painting 1">
+      <img src="images/pic_1.jpg" alt="Art 1" />
+    </a>
+
+    <a href="images/pic_2.jpg" data-lightbox="art-gallery" data-title="Painting 2">
+      <img src="images/pic_2.jpg" alt="Art 2" />
+    </a>
+
+    <a href="images/pic_3.jpg" data-lightbox="art-gallery" data-title="Painting 3">
+      <img src="images/pic_3.jpg" alt="Art 3" />
+    </a>
+
+    <a href="images/IMG_20230802_120737.jpg" data-lightbox="art-gallery" data-title="Painting 4">
+      <img src="images/IMG_20230802_120737.jpg" alt="Art 4" />
+    </a>
+
+    <a href="images/IMG_20230802_120815.jpg" data-lightbox="art-gallery" data-title="Painting 5">
+      <img src="images/IMG_20230802_120815.jpg" alt="Art 5" />
+    </a>
+
+    <a href="images/IMG_20230518_192456.jpg" data-lightbox="art-gallery" data-title="Painting 6">
+      <img src="images/IMG_20230518_192456.jpg" alt="Art 6" />
+    </a>
+
+    <a href="images/pic_9.jpg" data-lightbox="art-gallery" data-title="Painting 7">
+      <img src="images/pic_9.jpg" alt="Art 7" />
+    </a>
+
+    <!-- Add more here -->
+    <!-- 
+    <a href="images/YOUR_IMAGE.jpg" data-lightbox="art-gallery" data-title="Optional Caption">
+      <img src="images/YOUR_IMAGE.jpg" alt="Art X" />
+    </a>
+    -->
+
   </div>
 
   <style>
-    .slider img {
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 2em;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: auto;
       border-radius: 8px;
-      max-height: 70vh;
-      object-fit: contain;
+      transition: transform 0.2s ease;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      cursor: zoom-in;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.03);
     }
   </style>
-
-  <script>
-    $(document).ready(function(){
-      $('.slider').slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        adaptiveHeight: true,
-        arrows: true,
-        autoplay: false
-      });
-    });
-  </script>
-</article>			
-							</article>
+</article>
 
 						<!-- Visualizations -->
 <!-- 							<article id="visualizations">
@@ -957,6 +991,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 	</body>
 </html>
+
 
 
 
