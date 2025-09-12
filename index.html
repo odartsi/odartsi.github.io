@@ -498,8 +498,73 @@
     </div>
   </div>
 </article>
-
 <article id="art2">
+  <h2 class="major">Art Gallery</h2>
+  <blockquote>
+    Painting is my preferred form of meditation — here are a few selected works. Click to view full size.
+  </blockquote>
+
+  <div class="gallery main-carousel" data-flickity='{"pageDots": false, "prevNextButtons": true, "contain": true, "adaptiveHeight": true, "asNavFor": ".thumbnail-carousel"}'>
+    <div class="carousel-cell"><img src="images/pic_1.jpg" alt="Art 1"></div>
+    <div class="carousel-cell"><img src="images/pic_2.jpg" alt="Art 2"></div>
+    <div class="carousel-cell"><img src="images/pic_3.jpg" alt="Art 3"></div>
+    <div class="carousel-cell"><img src="images/IMG_20230802_120737.jpg" alt="Art 4"></div>
+    <div class="carousel-cell"><img src="images/IMG_20230802_120815.jpg" alt="Art 5"></div>
+    <div class="carousel-cell"><img src="images/IMG_20230518_192456.jpg" alt="Art 6"></div>
+    <div class="carousel-cell"><img src="images/pic_9.jpg" alt="Art 7"></div>
+  </div>
+
+  <div class="gallery thumbnail-carousel" data-flickity='{"asNavFor": ".main-carousel", "contain": true, "pageDots": false, "prevNextButtons": false}'>
+    <div class="carousel-cell"><img src="images/pic_1.jpg" alt="Thumb 1"></div>
+    <div class="carousel-cell"><img src="images/pic_2.jpg" alt="Thumb 2"></div>
+    <div class="carousel-cell"><img src="images/pic_3.jpg" alt="Thumb 3"></div>
+    <div class="carousel-cell"><img src="images/IMG_20230802_120737.jpg" alt="Thumb 4"></div>
+    <div class="carousel-cell"><img src="images/IMG_20230802_120815.jpg" alt="Thumb 5"></div>
+    <div class="carousel-cell"><img src="images/IMG_20230518_192456.jpg" alt="Thumb 6"></div>
+    <div class="carousel-cell"><img src="images/pic_9.jpg" alt="Thumb 7"></div>
+  </div>
+
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <style>
+    .gallery {
+      background: white;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .main-carousel {
+      width: 80%;
+      margin: 0 auto 20px;
+    }
+    .main-carousel img {
+      width: auto;
+      max-height: 600px;
+      margin: 0 auto;
+    }
+    .thumbnail-carousel {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .thumbnail-carousel .carousel-cell {
+      width: 100px;
+      height: 75px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    .thumbnail-carousel .carousel-cell img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border: 2px solid transparent;
+      border-radius: 5px;
+    }
+    .thumbnail-carousel .is-selected img {
+      border-color: #2bbbad;
+    }
+  </style>
+</article>
+<!-- <article id="art2">
   <h2 class="major">Art Gallery</h2>
   <blockquote>
     Painting is my preferred form of meditation — here are a few selected works. Click to view full size.
@@ -513,44 +578,9 @@
   <a href="images/IMG_20230518_192456.jpg" target="_blank"><img src="images/IMG_20230518_192456.jpg" alt="Art 6" /></a>
   <a href="images/pic_9.jpg" target="_blank"><img src="images/pic_9.jpg" alt="Art 7" /></a>
 </div>
-<!--   <div class="gallery-grid">
 
-    <a href="images/pic_1.jpg" data-lightbox="art-gallery" data-title="Painting 1">
-      <img src="images/pic_1.jpg" alt="Art 1" />
-    </a>
 
-    <a href="images/pic_2.jpg" data-lightbox="art-gallery" data-title="Painting 2">
-      <img src="images/pic_2.jpg" alt="Art 2" />
-    </a>
 
-    <a href="images/pic_3.jpg" data-lightbox="art-gallery" data-title="Painting 3">
-      <img src="images/pic_3.jpg" alt="Art 3" />
-    </a>
-
-    <a href="images/IMG_20230802_120737.jpg" data-lightbox="art-gallery" data-title="Painting 4">
-      <img src="images/IMG_20230802_120737.jpg" alt="Art 4" />
-    </a>
-
-    <a href="images/IMG_20230802_120815.jpg" data-lightbox="art-gallery" data-title="Painting 5">
-      <img src="images/IMG_20230802_120815.jpg" alt="Art 5" />
-    </a>
-
-    <a href="images/IMG_20230518_192456.jpg" data-lightbox="art-gallery" data-title="Painting 6">
-      <img src="images/IMG_20230518_192456.jpg" alt="Art 6" />
-    </a>
-
-    <a href="images/pic_9.jpg" data-lightbox="art-gallery" data-title="Painting 7">
-      <img src="images/pic_9.jpg" alt="Art 7" />
-    </a> -->
-
-    <!-- Add more here -->
-    <!-- 
-    <a href="images/YOUR_IMAGE.jpg" data-lightbox="art-gallery" data-title="Optional Caption">
-      <img src="images/YOUR_IMAGE.jpg" alt="Art X" />
-    </a>
-    -->
-
-<!--   </div> -->
 <style>
 .gallery-grid {
   display: grid;
@@ -580,7 +610,7 @@
 .gallery-grid img:hover {
   transform: scale(1.03);
 }
-</style>
+</style> -->
 <!--   <style>
     .gallery-grid {
       display: grid;
@@ -947,6 +977,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 	</body>
 </html>
+
 
 
 
