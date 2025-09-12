@@ -505,13 +505,13 @@
     Painting is my preferred form of meditation — here are a few selected works. Click to view full size.
   </blockquote>
 <div class="gallery-grid">
-  <a href="images/pic_1.jpg" target="_blank"><img src="images/art1-thumb.jpg" alt="Art 1" /></a>
-  <a href="images/pic_2.jpg" target="_blank"><img src="images/art2-thumb.jpg" alt="Art 2" /></a>
-  <a href="images/pic_3.jpg" target="_blank"><img src="images/art3-thumb.jpg" alt="Art 3" /></a>
-  <a href="images/IMG_20230802_120737.jpg" target="_blank"><img src="images/art4-thumb.jpg" alt="Art 4" /></a>
-  <a href="images/IMG_20230802_120815.jpg" target="_blank"><img src="images/art5-thumb.jpg" alt="Art 5" /></a>
-  <a href="images/IMG_20230518_192456.jpg" target="_blank"><img src="images/art6-thumb.jpg" alt="Art 6" /></a>
-<a href="images/pic_9.jpg" target="_blank"><img src="images/art6-thumb.jpg" alt="Art 7" /></a>
+  <a href="images/pic_1.jpg" target="_blank"><img src="images/pic_1.jpg" alt="Art 1" /></a>
+  <a href="images/pic_2.jpg" target="_blank"><img src="images/pic_2.jpg" alt="Art 2" /></a>
+  <a href="images/pic_3.jpg" target="_blank"><img src="images/pic_3.jpg" alt="Art 3" /></a>
+  <a href="images/IMG_20230802_120737.jpg" target="_blank"><img src="images/IMG_20230802_120737.jpg" alt="Art 4" /></a>
+  <a href="images/IMG_20230802_120815.jpg" target="_blank"><img src="images/IMG_20230802_120815.jpg" alt="Art 5" /></a>
+  <a href="images/IMG_20230518_192456.jpg" target="_blank"><img src="images/IMG_20230518_192456.jpg" alt="Art 6" /></a>
+  <a href="images/pic_9.jpg" target="_blank"><img src="images/pic_9.jpg" alt="Art 7" /></a>
 </div>
 <!--   <div class="gallery-grid">
 
@@ -551,8 +551,37 @@
     -->
 
 <!--   </div> -->
+<style>
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 2em;
+}
 
-  <style>
+.gallery-grid a {
+  display: block;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 250px; /* fixed height for all thumbnails */
+  object-fit: cover; /* crop to fit without distortion */
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+  cursor: zoom-in;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03);
+}
+</style>
+<!--   <style>
     .gallery-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -573,7 +602,7 @@
       transform: scale(1.03);
     }
   </style>
-</article>
+</article> -->
 
 						<!-- Visualizations -->
 <!-- 							<article id="visualizations">
@@ -918,6 +947,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 	</body>
 </html>
+
 
 
 
