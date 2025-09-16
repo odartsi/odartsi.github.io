@@ -552,7 +552,9 @@
   </blockquote>
 <div class="gallery-grid">
 <!--   <a href="images/pic_1.jpg" target="_blank"><img src="images/pic_1.jpg" alt="Art 1" /></a> -->
-	<img src="images/pic_1.jpg" alt="Art 1" onclick="openImgModal(this.src)" style="cursor: zoom-in;" />
+<a href="#lightbox" onclick="document.getElementById('lightbox-img').src='images/pic_1.jpg'">
+  <img src="images/pic_1.jpg" alt="Art 1" style="cursor: zoom-in;" />
+</a>
   <a href="images/pic_2.jpg" target="_blank"><img src="images/pic_2.jpg" alt="Art 2" /></a>
   <a href="images/pic_3.jpg" target="_blank"><img src="images/pic_3.jpg" alt="Art 3" /></a>
   <a href="images/IMG_20230802_120737.jpg" target="_blank"><img src="images/IMG_20230802_120737.jpg" alt="Art 4" /></a>
@@ -1024,6 +1026,7 @@ window.onclick = function(event) {
 </script>
 	</body>
 </html>
+
 
 
 
