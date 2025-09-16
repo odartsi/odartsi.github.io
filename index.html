@@ -989,26 +989,42 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/main.js"></script>
 <script>
 function openImgModal(src) {
-  var modal = document.getElementById("imgModal");
-  var modalImg = document.getElementById("modalImage");
+  const modal = document.getElementById("imgModal");
+  const modalImg = document.getElementById("modalImage");
   modal.style.display = "block";
   modalImg.src = src;
+
+  // Prevent background scroll while modal is open (optional)
+  document.body.style.overflow = "hidden";
 }
 
 function closeImgModal() {
-  document.getElementById("imgModal").style.display = "none";
+  const modal = document.getElementById("imgModal");
+  modal.style.display = "none";
+
+  // Re-enable background scroll (optional)
+  document.body.style.overflow = "auto";
 }
 
-// Close modal when clicking outside the image
+// Only close modal if you clicked outside the image
 window.onclick = function(event) {
-  var modal = document.getElementById("imgModal");
-  if (event.target == modal) {
-    modal.style.display = "none";
+  const modal = document.getElementById("imgModal");
+  const modalImg = document.getElementById("modalImage");
+
+  if (event.target === modal) {
+    closeImgModal();
+
+    // Optional: explicitly return to the current section (e.g. #art2)
+    // So the browser doesn't scroll up unexpectedly
+    if (location.hash !== "#art2") {
+      history.replaceState(null, null, "#art2");
+    }
   }
-}
+};
 </script>
 	</body>
 </html>
+
 
 
 
