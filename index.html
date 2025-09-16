@@ -545,16 +545,13 @@
 }
 </style> -->
 						
-<article id="art2">
+<!-- <article id="art2">
   <h2 class="major">Art Gallery</h2>
   <blockquote>
     Painting is my preferred form of meditation — here are a few selected works. Click to view full size.
   </blockquote>
 <div class="gallery-grid">
-<!--   <a href="images/pic_1.jpg" target="_blank"><img src="images/pic_1.jpg" alt="Art 1" /></a> -->
-<a href="#lightbox" onclick="document.getElementById('lightbox-img').src='images/pic_1.jpg'">
-  <img src="images/pic_1.jpg" alt="Art 1" style="cursor: zoom-in;" />
-</a>
+ <a href="images/pic_1.jpg" target="_blank"><img src="images/pic_1.jpg" alt="Art 1" /></a>
   <a href="images/pic_2.jpg" target="_blank"><img src="images/pic_2.jpg" alt="Art 2" /></a>
   <a href="images/pic_3.jpg" target="_blank"><img src="images/pic_3.jpg" alt="Art 3" /></a>
   <a href="images/IMG_20230802_120737.jpg" target="_blank"><img src="images/IMG_20230802_120737.jpg" alt="Art 4" /></a>
@@ -625,7 +622,45 @@
   font-weight: bold;
   cursor: pointer;
 }
-</style>
+</style> -->
+				<article id="art2">
+  <h2 class="major">Art Gallery</h2>
+  <blockquote>
+    Painting is my preferred form of meditation — here are a few selected works.
+  </blockquote>
+
+  <div class="gallery-grid">
+    <img src="images/pic_1.jpg" alt="Art 1" />
+    <img src="images/pic_2.jpg" alt="Art 2" />
+    <img src="images/pic_3.jpg" alt="Art 3" />
+    <img src="images/IMG_20230802_120737.jpg" alt="Art 4" />
+    <img src="images/IMG_20230802_120815.jpg" alt="Art 5" />
+    <img src="images/IMG_20230518_192456.jpg" alt="Art 6" />
+    <img src="images/pic_9.jpg" alt="Art 7" />
+  </div>
+
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 16px;
+      margin-top: 1.5em;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+      cursor: zoom-in;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</article>
 <!--   <style>
     .gallery-grid {
       display: grid;
@@ -1026,6 +1061,7 @@ window.onclick = function(event) {
 </script>
 	</body>
 </html>
+
 
 
 
