@@ -2124,3 +2124,48 @@ a.icon-link img {
   text-align: center;
 }
 
+
+<!-- Lightbox container (reusable for all images) -->
+<div id="lightbox" class="lightbox">
+  <a href="#art2" class="lightbox-close"></a>
+  <img src="" alt="Preview" class="lightbox-img" id="lightbox-img" />
+</div>
+
+<style>
+/* Hide by default */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.75);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 5vh 2vw;
+}
+
+/* When #lightbox is the target of a link */
+#lightbox:target {
+  display: block;
+}
+
+.lightbox-img {
+  max-width: 90%;
+  max-height: 80vh;
+  margin-top: 5vh;
+  border-radius: 8px;
+  box-shadow: 0 0 20px #000;
+}
+
+/* Clicking outside (background) closes it */
+.lightbox-close {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: zoom-out;
+}
+</style>
