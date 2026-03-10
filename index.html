@@ -1,0 +1,630 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Olympia Dartsi</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" type="image/x-icon" href="images/bike.png">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<!-- Include jQuery -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+		<style>
+			/* ---- Publications styling ---- */
+			.pub-entry {
+				margin-bottom: 1.4em;
+				padding-left: 1em;
+				border-left: 3px solid rgba(255,255,255,0.15);
+			}
+			.pub-entry .pub-title {
+				font-weight: bold;
+				font-size: 1em;
+			}
+			.pub-entry .pub-venue {
+				font-style: italic;
+				opacity: 0.75;
+				font-size: 0.9em;
+			}
+			.pub-entry .pub-year {
+				opacity: 0.6;
+				font-size: 0.85em;
+			}
+
+			/* ---- Featured research cards ---- */
+			.featured-grid {
+				display: grid;
+				grid-template-columns: 1fr;
+				gap: 1.5em;
+				margin-top: 1.5em;
+				margin-bottom: 2em;
+			}
+			.featured-card {
+				background: rgba(255,255,255,0.04);
+				border: 1px solid rgba(255,255,255,0.1);
+				border-radius: 8px;
+				padding: 1.5em;
+			}
+			.featured-card h3 {
+				margin-top: 0;
+				margin-bottom: 0.3em;
+				font-size: 1.1em;
+			}
+			.featured-card p {
+				margin-bottom: 0.5em;
+				font-size: 0.95em;
+				opacity: 0.85;
+			}
+			.featured-card .tags {
+				margin-top: 0.5em;
+			}
+			.featured-card .tags span {
+				display: inline-block;
+				background: rgba(255,255,255,0.08);
+				border: 1px solid rgba(255,255,255,0.12);
+				border-radius: 4px;
+				padding: 0.15em 0.5em;
+				font-size: 0.78em;
+				margin-right: 0.4em;
+				margin-bottom: 0.3em;
+				opacity: 0.7;
+			}
+
+			/* ---- Talks list ---- */
+			.talk-entry {
+				margin-bottom: 0.8em;
+				padding-left: 1em;
+				border-left: 3px solid rgba(255,255,255,0.08);
+			}
+
+			/* ---- Life section ---- */
+			.adventure-grid {
+				display: grid;
+				grid-template-columns: 1fr;
+				gap: 1em;
+				margin-top: 1em;
+				margin-bottom: 1.5em;
+			}
+			.adventure-card {
+				background: rgba(255,255,255,0.04);
+				border: 1px solid rgba(255,255,255,0.1);
+				border-radius: 8px;
+				padding: 1.2em;
+			}
+			.adventure-card b {
+				font-size: 1em;
+			}
+			.adventure-card p {
+				margin: 0.3em 0 0 0;
+				font-size: 0.9em;
+				opacity: 0.8;
+			}
+
+			/* ---- Section dividers ---- */
+			.section-divider {
+				text-align: center;
+				margin: 2em 0 1.5em 0;
+				opacity: 0.4;
+				letter-spacing: 0.5em;
+			}
+
+			/* ---- Award highlight ---- */
+			.award-highlight {
+				background: rgba(255,255,255,0.05);
+				border-left: 3px solid #00d4aa;
+				padding: 1em 1.2em;
+				margin: 1.5em 0;
+				border-radius: 0 6px 6px 0;
+			}
+			.award-highlight p {
+				margin: 0;
+				font-size: 0.95em;
+			}
+		</style>
+	</head>
+
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<div class="icon">
+					<center>
+						<a target="blue"><img src="images/ai_art.png" alt="" style="width:70%;"/></a>
+					</center>
+				</div>
+				<div class="content">
+					<div class="inner">
+						<h1>Olympia Dartsi</h1>
+						<p>Research Scientist · AI for Autonomous Scientific Discovery</p>
+						<p style="opacity:0.6; font-size:0.85em; margin-top:-0.5em;">Postdoctoral Fellow at Lawrence Berkeley National Laboratory</p>
+					</div>
+				</div>
+
+				<nav>
+					<ul>
+						<li><a href="#about">About</a></li>
+						<li><a href="#research">Research</a></li>
+						<li><a href="#publications">Publications</a></li>
+						<li><a href="#outreach">Outreach</a></li>
+						<li><a href="#life">Life</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Main -->
+			<div id="main">
+
+				<!-- ===================== ABOUT ===================== -->
+				<article id="about">
+					<h2 class="major">About</h2>
+
+					<img src="images/pict_01.jpeg" alt="" style="width:70%; display:block; margin: 0 auto;" />
+
+					<p>I started my scientific journey studying physics at the Aristotle University of Thessaloniki. Shortly after completing my M.Sc. degree in computational physics, I moved to the picturesque alpine town of Annecy, France, where I did my PhD in experimental particle physics at CERN. If you'd like to know more, you can find my PhD thesis <a href="https://cds.cern.ch/record/2703156/files/CERN-THESIS-2019-227.pdf" target="_blank">here</a>.</p>
+
+					<p>After finishing my PhD, I made the transition into data science, where I continued applying scientific reasoning to real-world problems. The topics were different, but the core mindset remained the same: combine theory with data to make sense of complex systems and uncover hidden patterns.</p>
+
+					<p>Currently, I'm a Fellow Postdoctoral Researcher at <a href="https://www.lbl.gov/" target="_blank">Lawrence Berkeley National Laboratory</a>, working with <strong>A-Lab</strong>, an autonomous laboratory for materials discovery. My work focuses on combining chemistry, data science, and automation to make sense of complex synthesis and characterization data — blending statistical reasoning, machine learning, and interactive tools.</p>
+
+					<p>I revel in the problem-solving aspect, but I don't want to stop there: being able to communicate my findings and their theoretical underpinnings to audiences of wildly different backgrounds has always been dear to my heart.</p>
+
+					<blockquote>"To learn is a natural pleasure, not confined to philosophers, but common to all men."
+					— Aristotle</blockquote>
+
+					<div class="award-highlight">
+						<p><strong>2025 Breakthrough Prize in Fundamental Physics</strong> — Recognized as a contributing scientist on the ATLAS Collaboration at the LHC, which was collectively awarded the prize for its groundbreaking work in particle physics.</p>
+					</div>
+
+					<div class="section-divider">· · ·</div>
+
+					<!-- Work Experience -->
+					<ul class="actions">
+						<li>
+							<a href="#" class="icon-link">
+								<img src="images/icons8-business-64.png" alt="" /> Work Experience
+							</a>
+						</li>
+					</ul>
+					<div class="table-wrapper">
+						<table>
+							<tbody>
+								<tr>
+									<td>2024 – current</td>
+									<td>Postdoctoral Fellow</td>
+									<td>Lawrence Berkeley National Lab</td>
+								</tr>
+								<tr>
+									<td>2021 – 2023</td>
+									<td>Lead Data Scientist</td>
+									<td>Tempr.</td>
+								</tr>
+								<tr>
+									<td>2020 – 2021</td>
+									<td>Data Scientist</td>
+									<td>Dreamin</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<!-- Education -->
+					<ul class="actions">
+						<li>
+							<a href="#" class="icon-link">
+								<img src="images/icons8-graduation-cap-64.png" alt="" /> Education
+							</a>
+						</li>
+					</ul>
+					<div class="table-wrapper">
+						<table>
+							<tbody>
+								<tr>
+									<td>2016 – 2019</td>
+									<td>PhD Particle Physics</td>
+									<td>CERN / Université Grenoble Alpes</td>
+								</tr>
+								<tr>
+									<td>2014 – 2016</td>
+									<td>MSc Computational Physics</td>
+									<td>Aristotle Un. of Thessaloniki</td>
+								</tr>
+								<tr>
+									<td>2008 – 2014</td>
+									<td>BSc Physics</td>
+									<td>Aristotle Un. of Thessaloniki</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+				</article>
+
+
+				<!-- ===================== RESEARCH ===================== -->
+				<article id="research">
+					<h2 class="major">Research</h2>
+
+					<p>My research sits at the intersection of AI, scientific reasoning, and automation — from particle physics at CERN to autonomous materials discovery at Berkeley Lab.</p>
+
+					<!-- Featured Research -->
+					<h3>Featured Work</h3>
+
+					<div class="featured-grid">
+
+						<div class="featured-card">
+							<h3>Automated Interpretation Framework (AIF)</h3>
+							<p>An open-source LLM-guided framework for automating chemical reasoning in high-throughput phase identification. Combines probabilistic methods with large language models to interpret X-ray diffraction data from autonomous synthesis experiments at LBNL's A-Lab.</p>
+							<p><em>Selected for Breakthrough News Oral Presentation at MRS Spring Meeting 2026.</em></p>
+							<div class="tags">
+								<span>LLMs</span>
+								<span>Chemical Reasoning</span>
+								<span>Autonomous Labs</span>
+								<span>XRD</span>
+								<span>Python</span>
+							</div>
+						</div>
+
+						<div class="featured-card">
+							<h3>Interactive Dashboard for Materials Research</h3>
+							<a href="https://github.com/user-attachments/assets/fdf3d33a-c34c-4738-9f2b-3924d3544bac" target="_blank">
+								<img src="images/video_preview.png" alt="Dashboard Preview" style="width:100%; border-radius:6px; margin-top:0.5em;" />
+							</a>
+							<p>Designed and deployed a unified data-interactive dashboard integrating synthesis and characterization data streams into a single queryable interface for the A-Lab autonomous laboratory.</p>
+							<div class="tags">
+								<span>Dash/Plotly</span>
+								<span>HoloViz Panel</span>
+								<span>Data Integration</span>
+								<span>Python</span>
+							</div>
+						</div>
+
+						<div class="featured-card">
+							<h3>PhD: Particle Physics at CERN</h3>
+							<p>Developed boosted decision tree algorithms for signal selection within petabyte-scale datasets in the ATLAS experiment. Implemented Bayesian unfolding techniques to correct for detector effects, contributing to large-scale collaborative physics analysis at the LHC.</p>
+							<p><a href="https://cds.cern.ch/record/2703156/files/CERN-THESIS-2019-227.pdf" target="_blank">Read the thesis →</a></p>
+							<div class="tags">
+								<span>BDT</span>
+								<span>Bayesian Unfolding</span>
+								<span>ATLAS/LHC</span>
+								<span>C++</span>
+								<span>Python</span>
+							</div>
+						</div>
+
+						<div class="featured-card">
+							<h3>Revenue Forecasting & Campaign Optimization</h3>
+							<p>At Tempr, predicted future revenues for advertising campaigns via neural network-based time series forecasting. Optimized budget allocation, audience, and time targeting using multi-armed bandit algorithms and k-means clustering.</p>
+							<div class="tags">
+								<span>Time Series</span>
+								<span>Neural Networks</span>
+								<span>Multi-Armed Bandit</span>
+								<span>K-Means</span>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="section-divider">· · ·</div>
+
+					<!-- Code & Experiments -->
+					<h3>Code & Experiments</h3>
+
+					<div class="project-grid">
+
+						<div class="project-card">
+							<b>Anomaly Detection (CV)</b>
+							<a href="https://github.com/odartsi/AnomalyDetection" target="_blank">
+								<img src="images/anomalydet.png" alt="" style="width:100%;" />
+							</a>
+							<p>Unsupervised anomaly detection in MNIST digits with ROC AUC evaluation.</p>
+						</div>
+
+						<div class="project-card">
+							<b>Parkinson UPDRS Forecasting</b>
+							<a href="https://github.com/odartsi/Healthcare/tree/main/Parkinson_Predictions" target="_blank">
+								<img src="images/parkinson_updrs_wip.png" alt="" style="width:100%;" />
+							</a>
+							<p>Predicting MDS-UPDRS scores to measure Parkinson's disease progression.</p>
+						</div>
+
+						<div class="project-card">
+							<b>Time Series (ARIMA)</b>
+							<a href="https://github.com/odartsi/Neural_Network_Timeseries/tree/main/ARIMA_model" target="_blank">
+								<img src="images/timeseries.png" alt="" style="width:100%;" />
+							</a>
+							<p>Time series forecasting using the ARIMA model.</p>
+						</div>
+
+						<div class="project-card">
+							<b>Multi-Armed Bandit</b>
+							<a href="https://github.com/odartsi/Multi-Armed-Bandit" target="_blank">
+								<img src="images/multiarmed.jpeg" alt="" style="width:100%;" />
+							</a>
+							<p>UCB algorithm implementation for exploration-exploitation tradeoffs.</p>
+						</div>
+
+						<div class="project-card">
+							<b>Data Imputation</b>
+							<a href="https://github.com/odartsi/Data_Imputation" target="_blank">
+								<img src="images/missingdata.webp" alt="" style="width:100%;" />
+							</a>
+							<p>Evaluating imputation methods for handling missing values in time series.</p>
+						</div>
+
+						<div class="project-card">
+							<b>Google Foobar Challenge</b>
+							<a href="https://github.com/odartsi/Foobar_challenge_2022" target="_blank">
+								<img src="images/foobar.gif" alt="" style="width:100%;" />
+							</a>
+							<p>Complete solutions for all levels of Google's secret programming challenge.</p>
+						</div>
+
+					</div>
+
+					<ul class="actions stacked">
+						<li><center><a href="https://github.com/odartsi" target="_blank" class="button">More on GitHub</a></center></li>
+					</ul>
+
+				</article>
+
+
+				<!-- ===================== PUBLICATIONS ===================== -->
+				<article id="publications">
+					<h2 class="major">Publications</h2>
+
+					<h3>Papers</h3>
+
+					<!-- TODO: Replace # with actual DOI/URLs for each paper -->
+					<div class="pub-entry">
+						<div class="pub-title"><a href="#" target="_blank">Automating Chemical Reasoning in High-Throughput Phase Identification with a Probabilistic, LLM-Guided Framework</a></div>
+						<div class="pub-venue">Forthcoming</div>
+						<div class="pub-year">2026</div>
+					</div>
+
+					<div class="pub-entry">
+						<div class="pub-title"><a href="#" target="_blank">Leveraging Unlabeled SEM Datasets with Self-Supervised Learning for Enhanced Particle Segmentation</a></div>
+						<div class="pub-venue">npj Computational Materials</div>
+						<div class="pub-year">2025</div>
+					</div>
+
+					<div class="pub-entry">
+						<div class="pub-title"><a href="#" target="_blank">AlabOS: An Open-Source Platform for Autonomous Lab Orchestration</a></div>
+						<div class="pub-venue">Journal of Digital Discovery</div>
+						<div class="pub-year">2024</div>
+					</div>
+
+					<div class="pub-entry">
+						<div class="pub-title"><a href="https://cds.cern.ch/record/2703156/files/CERN-THESIS-2019-227.pdf" target="_blank">PhD Thesis — Experimental Particle Physics</a></div>
+						<div class="pub-venue">Université Grenoble Alpes / CERN</div>
+						<div class="pub-year">2019</div>
+					</div>
+
+					<p style="margin-top:1em; font-size:0.9em; opacity:0.7;">
+						See all publications on <a href="https://scholar.google.com/citations?user=7e9eaCIAAAAJ&hl=en" target="_blank">Google Scholar</a>.
+					</p>
+
+					<div class="section-divider">· · ·</div>
+
+					<h3>Selected Talks</h3>
+
+					<div class="talk-entry">
+						<b>MRS Spring Meeting 2026</b> — Breakthrough News Oral Presentation<br/>
+						<span style="opacity:0.7; font-size:0.9em;">Selected for the AIF framework work at LBNL.</span>
+					</div>
+
+					<div class="talk-entry">
+						<b><a href="presentations/mrs_2025_dartsi.pdf" target="_blank">MRS Spring Meeting 2025</a></b><br/>
+						<span style="opacity:0.7; font-size:0.9em;">Data Infrastructure for Automated Labs and Framework for Interpretation of Characterization Results.</span>
+					</div>
+
+				</article>
+
+
+				<!-- ===================== OUTREACH ===================== -->
+				<article id="outreach">
+					<h2 class="major">Outreach</h2>
+
+					<blockquote>
+						Knowledge transfer is one of the key aspects of science. I've always been drawn to simplifying and visualizing complex concepts for diverse audiences.
+					</blockquote>
+
+					<h3>Lectures & Presentations</h3>
+
+					<div class="project-grid">
+
+						<div class="project-card">
+							<b>AI Fundamentals</b>
+							<a href="presentations/Artificial Intelligence.pdf" target="_blank">
+								<img src="images/AI.png" alt="AI Basics" style="width:100%;" />
+							</a>
+							<p>Introduction to artificial intelligence for general audiences.</p>
+						</div>
+
+						<div class="project-card">
+							<b>Neural Networks 101</b>
+							<a href="presentations/NeuralNetworkIntro.pptx.pdf" target="_blank">
+								<img src="images/nnintro.png" alt="Neural Networks" style="width:100%;" />
+							</a>
+							<p>Visual introduction to neural networks and deep learning.</p>
+						</div>
+
+						<div class="project-card">
+							<b>Data Visualisation Techniques</b>
+							<a href="presentations/Data Visualisation.pdf" target="_blank">
+								<img src="images/data_viz.png" alt="Data Viz" style="width:100%;" />
+							</a>
+							<p>Basics and advanced techniques for visualizing scientific data.</p>
+						</div>
+
+						<div class="project-card">
+							<b>From Academia to Data Science</b>
+							<a href="presentations/FromAcademiatoDS.pdf" target="_blank">
+								<img src="images/academiatods.png" alt="Academia to DS" style="width:100%;" />
+							</a>
+							<p>Mindset and tools when transitioning from research to industry.</p>
+						</div>
+
+						<div class="project-card">
+							<b>PhD Thesis Defense</b>
+							<a href="presentations/DefensePresentation.pdf" target="_blank">
+								<img src="images/phdpresentation.png" alt="PhD Defense" style="width:100%;" />
+							</a>
+							<p>Summary of research contributions during my PhD at CERN.</p>
+						</div>
+
+					</div>
+
+					<div class="section-divider">· · ·</div>
+
+					<h3>Writing</h3>
+
+					<div class="project-grid">
+						<div class="project-card">
+							<b>No More Scrum for Data Scientists</b>
+							<a href="https://medium.com/@olympiadartsi/no-more-scrum-for-data-scientists-2140baf33b3" target="_blank">
+								<img src="images/medium_article2.png" alt="Scrum Article" style="width:100%;" />
+							</a>
+							<p>Reflections on how agile methods like Scrum may not fit scientific workflows.</p>
+						</div>
+
+						<div class="project-card">
+							<b>The Ambiguity of Charisma</b>
+							<a href="https://olympiadartsi.medium.com/the-ambiguity-of-charisma-e1eb45766f22" target="_blank">
+								<img src="images/medium_article1.png" alt="Charisma Article" style="width:100%;" />
+							</a>
+							<p>Exploring how we define and misinterpret charisma in leadership.</p>
+						</div>
+					</div>
+
+					<div class="section-divider">· · ·</div>
+
+					<h3>Mentorship</h3>
+
+					<p><strong>Scientific Mentorship:</strong> Mentored a research intern at LBNL on a project evaluating the reliability and safety of LLM prompting strategies (OpenAI vs. open-source models).</p>
+
+					<p><strong>Community Mentorship:</strong> Providing guidance to high school students in Greece on careers in STEM and Data Science through <a href="https://www.thetippingpoint.org.gr/en/" target="_blank">The Tipping Point</a>.</p>
+
+				</article>
+
+
+				<!-- ===================== LIFE ===================== -->
+				<article id="life">
+					<h2 class="major">Life</h2>
+
+					<p>When I'm not sifting through bits and bytes, you'll find me somewhere outdoors — running mountain trails, cycling across continents, or painting. I also hold a certificate in <a href="https://en.wikipedia.org/wiki/Braille" target="_blank">Braille</a>, because why not.</p>
+
+					<!-- Adventures -->
+					<h3>Adventures</h3>
+
+					<center>
+						<a target="_blank"><img src="images/viaAlpina.png" alt="" style="width:70%;"/></a>
+					</center>
+
+					<div class="adventure-grid">
+						<div class="adventure-card">
+							<b><a href="https://www.strava.com/activities/9345011498" target="_blank">Crossing the Alps by Bike</a></b>
+							<p>2,300 km &amp; 38,000 m of elevation gain.</p>
+						</div>
+						<div class="adventure-card">
+							<b><a href="https://www.strava.com/activities/7699529265" target="_blank">64 km Ultra-Trail Race</a></b>
+							<p>3,500 m elevation gain in a single trail race.</p>
+						</div>
+						<div class="adventure-card">
+							<b><a href="https://www.strava.com/activities/2456005367" target="_blank">Col de l'Iseran by Bike</a></b>
+							<p>Cycling the highest paved mountain pass in Europe at 2,770 m.</p>
+						</div>
+					</div>
+
+					<p style="font-size:0.9em; opacity:0.7;">
+						More on my <a href="https://itra.run/RunnerSpace/DARTSI.Olympia/2015967" target="_blank">ITRA runner profile</a> and <a href="https://www.strava.com/athletes/19849468/" target="_blank">Strava</a>.
+					</p>
+
+					<div class="section-divider">· · ·</div>
+
+					<!-- Art Gallery -->
+					<h3>Paintings</h3>
+
+					<blockquote>
+						Painting is my preferred form of meditation — here are a few selected works.
+					</blockquote>
+
+					<div class="gallery-grid">
+						<img src="images/pic_1.jpg" alt="Art 1" />
+						<img src="images/pic_2.jpg" alt="Art 2" />
+						<img src="images/pic_3.jpg" alt="Art 3" />
+						<img src="images/IMG_20230802_120737.jpg" alt="Art 4" />
+						<img src="images/IMG_20230802_120815.jpg" alt="Art 5" />
+						<img src="images/IMG_20230518_192456.jpg" alt="Art 6" />
+						<img src="images/pic_9.jpg" alt="Art 7" />
+					</div>
+
+					<style>
+						.gallery-grid {
+							display: grid;
+							grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+							gap: 16px;
+							margin-top: 1.5em;
+						}
+
+						.gallery-grid img {
+							width: 100%;
+							height: 250px;
+							object-fit: cover;
+							border-radius: 8px;
+							cursor: zoom-in;
+							transition: transform 0.3s ease;
+						}
+
+						.gallery-grid img:hover {
+							transform: scale(1.05);
+						}
+					</style>
+
+					<div class="section-divider" style="margin-top:2em;">· · ·</div>
+
+					<p style="font-size:0.9em; opacity:0.7;">
+						What I'm reading: <a href="https://www.goodreads.com/user/show/88481127-olympia" target="_blank">Goodreads</a>.
+					</p>
+
+				</article>
+
+			</div>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<p>
+					<ul class="icons">
+						<li><a href="https://github.com/odartsi" target="_blank"><img src="images/icons8-github.svg" alt="" style="width:100%;"/><span class="label"></span></a></li>
+						<li><a href="https://scholar.google.com/citations?user=7e9eaCIAAAAJ&hl=en" target="_blank"><img src="images/mortarboard.png" alt="Google Scholar" style="width:100%;"/></a></li>
+						<li><a href="https://www.linkedin.com/in/drolympiadartsi/" target="_blank"><img src="images/icons8-linkedin-circled (1).svg" alt="" style="width:100%;"/><span class="label"></span></a></li>
+						<li><a href="https://olympiadartsi.medium.com/" target="_blank"><img src="images/icons8-medium-new.svg" alt="" style="width:100%;"/><span class="label"></span></a></li>
+						<li><a href="https://www.instagram.com/olympia_cycling/" target="_blank"><img src="images/icons8-instagram.svg" alt="" style="width:100%;"/><span class="label"></span></a></li>
+						<li><a href="https://www.strava.com/athletes/19849468/" target="_blank"><img src="images/icons8-strava.png" alt="" style="width:100%;"/><span class="label"></span></a></li>
+						<li><a href="https://www.goodreads.com/user/show/88481127-olympia" target="_blank"><img src="images/icons8-goodreads-100.png" alt="" style="width:100%;"/><span class="label"></span></a></li>
+					</ul>
+				</p>
+			</footer>
+
+		</div>
+
+		<!-- BG -->
+		<div id="bg"></div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
