@@ -210,12 +210,35 @@
 							<article id="publications">
 							  <h2 class="major">Publications</h2>
 
+							  <style>
+							    #publications ul.alt {
+							      margin-top: 1em;
+							    }
+							    #publications ul.alt li {
+							      padding: 1.8em 0;
+							      line-height: 1.7;
+							    }
+							    #publications ul.alt li:first-child {
+							      padding-top: 0.5em;
+							    }
+							    #publications ul.alt li strong {
+							      display: block;
+							      font-size: 1.1rem;
+							      line-height: 1.5;
+							      margin-bottom: 0.6em;
+							    }
+							    #publications ul.alt li em {
+							      opacity: 0.85;
+							      font-size: 0.95rem;
+							    }
+							  </style>
+
 							  <ul class="alt">
 
 							    <li>
 							      <strong><a target="blue" href="https://chemrxiv.org/doi/pdf/10.26434/chemrxiv.15000068/v1">Automating Chemical Reasoning in High-Throughput Phase Identification with a Probabilistic, LLM-Guided Framework</a></strong>
 							      <br>
-							      <em>chemRxiv</em>, 2026. &nbsp;|&nbsp; <a target="blue" href="https://chemrxiv.org/doi/pdf/10.26434/chemrxiv.15000068/v1">PDF</a> &nbsp;|&nbsp; <a target="blue" href="https://github.com/hackingmaterials/AIF">Code on GitHub</a>
+							      <em>chemRxiv</em>, 2026. &nbsp;|&nbsp; <a target="blue" href="https://github.com/hackingmaterials/AIF">Code on GitHub</a>
 							    </li>
 
 							    <li>
@@ -248,11 +271,22 @@
 						<!-- Work -->
 							<article id="projects">
 							  <h2 class="major">Projects</h2>
+
+								  <style>
+								    /* Make all project-card images uniform: same height, cropped to fill */
+								    #projects .project-card img {
+								      width: 100% !important;
+								      height: 200px !important;
+								      object-fit: cover !important;
+								      object-position: center !important;
+								      border-radius: 4px;
+								    }
+								  </style>
 							
 							  <div class="project-grid">
 
 							    <div class="project-card">
-							      <b>AIF — Automated Interpretation Framework</b>
+							      <b>Automated Interpretation Framework</b>
 							      <a href="https://github.com/hackingmaterials/AIF" target="blue">
 							        <img src="images/aif_image.png" alt="AIF Framework" style="width:100%;" />
 							      </a>
