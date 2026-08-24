@@ -582,10 +582,10 @@ window.onclick = function(event) {
   if (event.target === modal) {
     closeImgModal();
 
-    // Optional: explicitly return to the current section (e.g. #art2)
+    // Optional: explicitly return to the current section (e.g. #art)
     // So the browser doesn't scroll up unexpectedly
-    if (location.hash !== "#art2") {
-      history.replaceState(null, null, "#art2");
+    if (location.hash !== "#art") {
+      history.replaceState(null, null, "#art");
     }
   }
 };
