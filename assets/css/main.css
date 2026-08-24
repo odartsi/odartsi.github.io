@@ -2198,6 +2198,14 @@ a.icon-link img {
   }
 }
 
+.ai-safety-highlight {
+	background: rgba(217, 166, 160, 0.35);
+	padding: 0.05em 0.3em;
+	border-radius: 2px;
+	-webkit-box-decoration-break: clone;
+	box-decoration-break: clone;
+}
+
 
 .credentials-grid {
   display: grid;
