@@ -2281,4 +2281,22 @@ a.icon-link img {
   height: 100%;
   cursor: zoom-out;
 }
+.credential-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1.5px var(--panel-border);
+  color: var(--panel-heading);
+  font-size: 13px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.credential-icon.rose {
+  box-shadow: inset 0 0 0 1.5px #D9A6A0;
+  color: #8B5A52;
+}
 </style>
